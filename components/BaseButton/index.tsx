@@ -1,6 +1,6 @@
-import IButtonProps from "@/interfaces/IBaseButtonProps";
+import IBaseButtonProps from "@/interfaces/IBaseButtonProps";
 
-export default function BaseButton({ text, dark, type, onClick }: IButtonProps) {
+export default function BaseButton({ text, dark, type, onClick }: IBaseButtonProps) {
   const buttonColour = dark ? "bg-gray-800" : "bg-white";
   const textColour = dark ? "text-white" : "text-black";
   return (
