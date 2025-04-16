@@ -13,15 +13,18 @@ export default function Home() {
       {/* Full-page height div */}
       <section className="h-screen flex flex-col snap-start">
         <Header />
-        <div style={{ backgroundImage: "url('/classic-hero.jpg')"}} className="bg-cover flex-1 flex flex-col items-center justify-center">
-          <div className="bg-red-300/85 p-14 flex flex-col gap-6 items-center  md:gap-12 text-white rounded-md">
+        <div style={{ backgroundImage: "url('/classic-hero.jpg')"}} className="bg-cover bg-center flex-1 flex flex-col items-center justify-center">
+          <div className="max-w-2/3  bg-red-300/85 p-14 flex flex-col gap-6 items-center  md:gap-12 text-white rounded-md">
             <h1 className="text-2xl">{t("HeroTitle")}</h1>
-            <div className="max-w-96 font-medium pl-4 space-y-2 md:max-w-full">
-              <p>Build best looking resume in minutes!</p>
-              <p>Only 2% of resumes win. Yours will be one of them. Lets build you a resume that works.</p>
-              <p>Use best industry templates</p>
-              <p>2.99$ monthly - no hidden costs</p>
-              <p>Change your job search game with Resumex!</p>
+            <div className="font-medium text-lg pl-4 space-y-2 md:max-w-full">
+              <h1 className="text-xl font-extrabold">{t("HeroBulletP1Title")}</h1>
+              <p>{t("HeroBulletP1")}</p>
+              <h1 className="text-xl font-extrabold">{t("HeroBulletP2Title")}</h1>
+              <p>{t("HeroBulletP2")}</p>
+              <h1 className="text-xl font-extrabold">{t("HeroBulletP3Title")}</h1>
+              <p>{t("HeroBulletP3")}</p>
+              <h1 className="text-xl font-extrabold">{t("HeroBulletP4Title")}</h1>
+              <p>{t("HeroBulletP4")}</p>
             </div>
             <div className="w-full flex justify-center">
               {/* <LinkButton text={"Create now!"} href="/dashboard" /> */}
