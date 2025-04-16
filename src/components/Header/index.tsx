@@ -4,6 +4,9 @@ const Header = () => {
       <div>
         <h1>SALAG</h1>
       </div>
+      <div>
+        <h1>LV | RU | ENG</h1>
+      </div>
     </header>
   );
 };
