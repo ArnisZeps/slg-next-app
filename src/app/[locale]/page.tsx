@@ -2,13 +2,11 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 // import Image from "next/image";
-import ContactForm from "./_components/ContactForm/ContactForm";
+import ContactForm from "./_components/ContactForm";
 import { useTranslations } from "next-intl";
 import Accordion from "@/components/Accordion";
 
 export default function Home() {
-        document.documentElement.classList.add('dark');
-
   const t = useTranslations("HomePage");
   console.log(t);
   return (
