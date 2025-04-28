@@ -35,7 +35,7 @@ export default function ContactForm() {
 
   return (
     <div className="w-full max-w-sm md:max-w-4xl px-4 dark:bg-slate-800 dark:text-white">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">{t("ContactUsTitle")}</h2>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center dark:text-white">{t("ContactUsTitle")}</h2>
       {submitted && <p className="text-green-600 text-center mb-4">Thank you! We’ll get back to you soon.</p>}
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
