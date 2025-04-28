@@ -8,14 +8,13 @@ import Accordion from "@/components/Accordion";
 
 export default function Home() {
   const t = useTranslations("HomePage");
-  console.log(t);
   return (
     <div className="flex flex-col  dark:bg-slate-800 dark:text-white">
       {/* Full-page height div */}
       <section className="h-screen flex flex-col snap-start">
         <Header />
-        <div style={{ backgroundImage: "url('/classic-hero.jpg')" }} className="bg-cover bg-center flex-1 flex flex-col items-center justify-center">
-          <div className=" bg-red-300/85 p-7 flex flex-col gap-6 items-center md:p-14  md:gap-12 text-white rounded-md md:max-w-2/3 ">
+        <div style={{ backgroundImage: "url('/classic-hero.jpg')" }} className="bg-cover bg-center flex-1 flex flex-col md:items-center md:justify-center">
+          <div className=" bg-red-300/85  text-white rounded-md flex flex-col gap-6 items-center py-4 md:p-14 md:gap-12 md:max-w-2/3 ">
             <h1 className="text-2xl">{t("HeroTitle")}</h1>
             {/* Desktop Version */}
             <div className="hidden md:block font-medium text-lg pl-4 space-y-2 md:max-w-full">
