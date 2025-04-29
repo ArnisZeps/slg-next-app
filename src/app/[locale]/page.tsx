@@ -11,10 +11,14 @@ export default function Home() {
   return (
     <div className="flex flex-col  dark:bg-slate-800 dark:text-white">
       {/* Full-page height div */}
-      <section className="h-screen flex flex-col snap-start">
+      <section className="min-h-screen flex flex-col snap-start ">
         <Header />
-        <div style={{ backgroundImage: "url('/classic-hero.jpg')" }} className="bg-cover bg-center flex-1 flex flex-col md:items-center md:justify-center">
-          <div className=" bg-red-300/85  text-white rounded-md flex flex-col gap-6 items-center py-4 md:p-14 md:gap-12 md:max-w-2/3 ">
+        <div
+          style={{ backgroundImage: "url('/classic-hero.jpg')" }}
+          className="relative bg-cover bg-center flex-1 flex flex-col md:items-center md:justify-center -z-20"
+        >
+          <img src="/shape_1.svg" alt="Decorative Shape" className="absolute top-0 left-0 w-full h-full object-cover -z-10 pointer-events-none" />
+          <div className="  text-white rounded-md flex flex-col gap-6 items-center py-4 md:p-14 md:gap-12 md:max-w-2/3 ">
             <h1 className="text-2xl">{t("HeroTitle")}</h1>
             {/* Desktop Version */}
             <div className="hidden md:block font-medium text-lg pl-4 space-y-2 md:max-w-full">
@@ -42,7 +46,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-screen flex flex-col snap-start">
+      <section className="min-h-screen flex flex-col snap-start ">
         <div className="flex-1 flex flex-col items-center justify-center">
           <ContactForm />
         </div>
