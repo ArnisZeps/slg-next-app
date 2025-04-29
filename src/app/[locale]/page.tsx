@@ -9,7 +9,7 @@ import Accordion from "@/components/Accordion";
 export default function Home() {
   const t = useTranslations("HomePage");
   return (
-    <div className="flex flex-col dark:bg-slate-800 dark:text-white -z-30">
+    <div className="flex flex-col dark:text-white">
       {/* Full-page height div */}
       <section className="min-h-screen flex flex-col snap-start ">
         <Header />
