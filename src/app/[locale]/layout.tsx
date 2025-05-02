@@ -32,10 +32,10 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="snap-y snap-mandatory">
       <ThemeProvider>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col dark`}>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col`}>
           <NextIntlClientProvider messages={messages}>
             {/* Apply ThemeWrapper here */}
-            <main className="flex-1 dark">{children}</main>
+            <main className="flex-1">{children}</main>
           </NextIntlClientProvider>
         </body>
       </ThemeProvider>
