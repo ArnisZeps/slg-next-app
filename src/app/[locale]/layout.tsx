@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import ThemeProvider from "./_components/ThemeProvider";
 import "@/styles/globals.css";
 
 const geistSans = Geist({
@@ -30,14 +31,14 @@ export default async function RootLayout({
   const messages = await getMessages({ locale });
   return (
     <html lang={locale} className="snap-y snap-mandatory">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col`}>
-        <NextIntlClientProvider messages={messages}>
-          {/* <Header /> */}
-          <main className="flex-1 ">{children}</main>
-          {/* <Footer /> */}
-        </NextIntlClientProvider>
-      </body>
+      <ThemeProvider>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col dark`}>
+          <NextIntlClientProvider messages={messages}>
+            {/* Apply ThemeWrapper here */}
+            <main className="flex-1 dark">{children}</main>
+          </NextIntlClientProvider>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
-

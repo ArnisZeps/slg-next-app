@@ -9,15 +9,15 @@ import Accordion from "@/components/Accordion";
 export default function Home() {
   const t = useTranslations("HomePage");
   return (
-    <div className="flex flex-col dark:text-white">
+    <div className="flex flex-col  dark:bg-slate-800 dark:text-white ">
       {/* Full-page height div */}
-      <section className="min-h-screen flex flex-col snap-start ">
+      <section className="min-h-screen flex flex-col snap-start">
         <Header />
         <div
           style={{ backgroundImage: "url('/classic-hero.jpg')" }}
-          className="bg-cover bg-center flex flex-1 flex-col justify-center md:items-start -z-20"
+          className="bg-cover bg-center flex flex-1 flex-col justify-center md:items-start "
         >
-          <div style={{ backgroundImage: "url('/shape_1.svg')" }} className="relative bg-cover opacity-80 flex flex-1 flex-col justify-center md:items-start">
+          <div style={{ backgroundImage: "url('/shape_1.svg')" }} className="relative bg-cover opacity-80 flex flex-1 flex-col w-full justify-center md:items-start">
             <div className="font-bold text-white rounded-md flex flex-col gap-6 items-center p-8 md:p-14 md:gap-12 md:max-w-3/7 ">
               <h1 className="text-3xl">{t("HeroTitle")}</h1>
               {/* Desktop Version */}
