@@ -16,7 +16,10 @@ export default function Home() {
           style={{ backgroundImage: "url('/classic-hero.jpg')" }}
           className="bg-cover bg-center flex flex-1 flex-col justify-center md:items-start "
         >
-          <div style={{ backgroundImage: "url('/shape_1.svg')" }} className="relative bg-cover opacity-80 flex flex-1 flex-col w-full justify-center md:items-start">
+          <div
+            style={{ backgroundImage: "url('/shape_1.svg')" }}
+            className="relative bg-cover opacity-80 flex flex-1 flex-col w-full justify-center md:items-start"
+          >
             <div className="font-bold text-white rounded-md flex flex-col gap-6 items-center p-8 md:p-14 md:gap-12 md:max-w-3/7 ">
               <h1 className="text-3xl">{t("HeroTitle")}</h1>
               {/* Desktop Version */}
@@ -28,8 +31,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex flex-col snap-start ">
-        <div className="relative flex flex-col flex-1 items-center gap-10 p-8 lg:justify-between lg:flex-row lg:p-14">
+      <section className="min-h-screen flex flex-col snap-start items-center text-xl">
+        <div className="relative flex flex-col flex-1 items-center gap-10 p-4 lg:p-0 lg:justify-between lg:flex-row lg:w-full lg:max-w-10/12">
           <div className="relative aspect-square w-full max-w-xl lg:w-3/7 lg:max-w-2xl ">
             <Image alt="skirting" fill src="/salag_1.jpg" className="rounded-md" />
           </div>
@@ -43,8 +46,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-screen flex flex-col snap-start ">
-        <div className="flex-1 flex flex-col items-center justify-center">
+      <section className="min-h-screen flex flex-col snap-start items-center">
+        <div className="flex-1 flex flex-col items-center justify-center w-full lg:max-w-10/12">
           <ContactForm />
         </div>
         <Footer />
