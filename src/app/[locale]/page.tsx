@@ -37,11 +37,11 @@ export default function Home() {
             <Image alt="skirting" fill src="/salag_1.jpg" className="rounded-md" />
           </div>
           <div className="flex flex-col lg:max-w-3/7">
-            <h1 className="text-xl font-extrabold">{t("HeroBulletP2Title")}</h1>
+            <h1 className="text-2xl font-extrabold">{t("HeroBulletP2Title")}</h1>
             <p>{t("HeroBulletP2")}</p>
-            <h1 className="text-xl font-extrabold">{t("HeroBulletP3Title")}</h1>
+            <h1 className="text-2xl font-extrabold">{t("HeroBulletP3Title")}</h1>
             <p>{t("HeroBulletP3")}</p>
-            <h1 className="text-xl font-extrabold">{t("HeroBulletP4Title")}</h1>
+            <h1 className="text-2xl font-extrabold">{t("HeroBulletP4Title")}</h1>
             <p>{t("HeroBulletP4")}</p>
           </div>
         </div>
