@@ -42,14 +42,14 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="w-full  md:max-w-4xl px-4 dark:bg-slate-800 dark:text-white">
+    <div className="w-full px-4 dark:bg-slate-800 dark:text-white">
       <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center dark:text-white">{t("ContactUsTitle")}</h2>
-      <div className="flex flex-col gap-6">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-center">
-          <div className="w-full h-80 lg:w-2/3">
+      <div className="flex flex-row gap-6">
+        <div className="flex flex-col gap-6 lg:items-center lg:w-1/3">
+          <div className="w-full h-80">
             <Map />
           </div>
-          <div className="flex lg:justify-center lg:items-center lg:w-1/3">
+          <div className="flex lg:justify-center lg:items-center">
             <div className="text-xl">
               <p>+37126606573</p>
               <p>salag@salag.lv</p>
@@ -57,7 +57,7 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-center text-xl lg:text-base lg:gap-20 lg:flex-row">
+        <div className="flex flex-col gap-6 items-center text-xl lg:text-base lg:gap-20 lg:flex-row lg:w-2/3">
           <div className="w-full">
             {submitted && <p className="text-green-600 text-center mb-4">Thank you! We’ll get back to you soon.</p>}
             <form onSubmit={handleSubmit} className="space-y-6">

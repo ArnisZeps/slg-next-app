@@ -9,8 +9,7 @@ import Accordion from "@/components/Accordion";
 export default function Home() {
   const t = useTranslations("HomePage");
   return (
-    <div className="flex flex-col  dark:bg-slate-800 dark:text-white ">
-      {/* Full-page height div */}
+    <div className="flex flex-col dark:bg-slate-800 dark:text-white ">
       <section className="min-h-screen flex flex-col snap-start">
         <Header />
         <div
@@ -25,21 +24,8 @@ export default function Home() {
                 <h1 className="text-2xl font-extrabold">{t("HeroBulletP1Title")}</h1>
                 <p>{t("HeroBulletP1")}</p>
               </div>
-
-              {/* Mobile Accordion */}
-              {/* <div className="md:hidden w-full">
-              <Accordion
-                items={[
-                  { title: t("HeroBulletP1Title"), content: t("HeroBulletP1") },
-                  { title: t("HeroBulletP2Title"), content: t("HeroBulletP2") },
-                  { title: t("HeroBulletP3Title"), content: t("HeroBulletP3") },
-                  { title: t("HeroBulletP4Title"), content: t("HeroBulletP4") },
-                ]}
-              />
-            </div> */}
             </div>
           </div>
-          {/* <img src="/shape_1.svg" alt="Decorative Shape" className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-60" /> */}
         </div>
       </section>
       <section className="min-h-screen flex flex-col snap-start ">
