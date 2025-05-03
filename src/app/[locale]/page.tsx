@@ -43,11 +43,11 @@ export default function Home() {
         </div>
       </section>
       <section className="min-h-screen flex flex-col snap-start ">
-        <div className="relative flex flex-col flex-1 items-center gap-10 p-8 md:justify-between md:flex-row md:p-14">
-          <div className="relative aspect-square w-full md:w-3/7 md:max-w-2xl ">
+        <div className="relative flex flex-col flex-1 items-center gap-10 p-8 lg:justify-between lg:flex-row lg:p-14">
+          <div className="relative aspect-square w-full max-w-xl lg:w-3/7 lg:max-w-2xl ">
             <Image alt="skirting" fill src="/salag_1.jpg" className="rounded-md" />
           </div>
-          <div className="flex flex-col md:max-w-3/7">
+          <div className="flex flex-col lg:max-w-3/7">
             <h1 className="text-xl font-extrabold">{t("HeroBulletP2Title")}</h1>
             <p>{t("HeroBulletP2")}</p>
             <h1 className="text-xl font-extrabold">{t("HeroBulletP3Title")}</h1>
